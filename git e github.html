@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML TESTE</title>
+</head>
+<body>
+    <h1>Testando subir um arquivo html via push</h1>
+    <p> git - comando exemplo terminal: git init
+        git init é um comando único que você usa durante a configuração inicial de um novo repositório. 
+        A execução desse comando cria um novo subdiretório . git no diretório de trabalho atual. 
+        Essa ação também vai criar uma ramificação principal.
+        Utilizamos o comando init do git, para definir que temos um repositório aqui.Por baixo dos panos, ele cria uma pasta
+        ".git" com o que ele precisa para versionar este projeto.
+    </p>
+    <p>Adicionando Itens
+        Antes de ligarmos e enviarmos as informações locais para nosso servidor, precisamos informar para o Git quais
+        arquivos queremos enviar.
+        Em projetos maiores, você terá MUITOS arquivos, e nem todos você pode querer enviar para o Git, então existe um
+        comando chamado add que nos permite especificar quais arquivos queremos enviar.
+        COMANDO EXEMPLO: 
+        Adicionar um arquivo em especifico: git add README.md 
+        Adicionar todos os arquivos da pasta:git add --all
+
+    </p>
+    <p>Comitando - comando exemplo terminal: git commit
+        commit em português siginifica comprometer.
+        Quando executamos um Commit, estamos de fato, con comprometendo com todas as mudanças que fizemos no 
+        código, ou seja, estamos preparando para enviar estas informações para as demais pessoas que trabalham no projeto.
+        Comitar não siginifica enviar as informações para nosso repositório remoto (github). Quando você comita algo,
+        estas informações ainda estão apenas em sua máquina.
+        Comentários - Code exemplo terminal: git commit -m "Adicionado arquivo readme.md"
+        Embora alguns lugares permitam que você realize commits sem informar nada, o ideal é que você sempre 
+        informe o que foi modificado. Os comentários podem ser adicionados utilizando o paramentro "-m", seguido pelo texto
+        a ser enviado, durante o processo de commit
+
+    </p>
+    <p>Git remote - comando exemplo terminal: git remote add origin https://github.com/rafael-perfil/testando-git.git
+        Ligando os repositório: Embora tenhamos adicionado um arquivo e comitado as informações locais, ainda não especificamos
+        para onde vão estar informações no servidor (GitHub).
+        Para realizar esta ação, vamos utilizar o comando REMOTE, seguido pela opção ADD ORIGIN, que vai informar para 
+        qual repositório do GitHub as informações locais serão enviadas.
+        O comando remote add origin é seguido pela URL do repositório.
+    </p>
+    <p>Git push - comando exemplo terminal: git push -u origin master
+        O comando git push é usado para enviar o conteúdo do repositório local para um repositório remoto. 
+        O comando push transfere commits do repositório local a um repositório remoto. É o oposto do comando git fetch , 
+        que importa commits para branches locais, enquanto o comando push exporta commits para branches remotos.</p>
+
+    <p>BRANCHS = Informações adicionais
+        Branchs são ramificações do nosso código onde podemos copiar uma versão específica e trabalhar sobre ela,
+        sem afetar a versão principal. Todo repositório que criamos, já vem com uma Branch chamada Master por padrão.
+        Desta forma, é comum que se tenham várias Branchs em um projeto. A mais comum dela é a de desenvolvimento, que
+        simplesmente separa o que está em andamento, do que já está pronto. Em suma, não é legal ficar realizando desenvolvimento
+        na Branch Master, é legal criar uma Branch para desenvolvimento e seguir nela. Com tudo pronto então, podemos juntá-la a 
+        Master.</p>
+    <p>ATUALIZANDO OS ARQUIVOS LOCAIS - Comando exemplo terminal: git pull
+        Em inglês os comandos push e pull são usados para empurrar e puxar, e cuidado, push é empurrar e pull é puxar, então
+        isto pode te confundir. Desta forma, sempre que queremos enviar arquivos para o nosso servidor, usamos o comando git push.
+        Logo, para obter atualizações, utilizaremos o comando git pull.
+        Edite o arquivo README.MD no servidor, commit na plataforma GitHub</p>
+    <p>CLONANDO UM REPOSITÓRIO
+        Para realizar um clone de um repositório que já esteja no GitHub é necessário navegar para uma pasta pelo terminal
+        e executar o seguinte comando: git clone https://github.com/USUARIOmeu-primeiro-repositorio.git
+        Sempre que você quiser clonar um repositório, utilizará este padrão, ou seja, 
+        git clone https://github.com/**USUARIO**/**REPOSITORIO**.git.
+    </p>
+    
+</html>
